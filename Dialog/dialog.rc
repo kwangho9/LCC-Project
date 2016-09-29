@@ -1,0 +1,28 @@
+/* Wedit generated resource file */
+#ifdef __LCC__
+#include <windows.h>
+#endif
+#include "dialogres.h"
+
+
+IDD_MAINDIALOG DIALOG 7, 20, 195, 86
+//STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+STYLE DS_SYSMODAL | DS_MODALFRAME | DS_SETFOREGROUND | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_COMBO, 85, 63, 100, 12, CBS_OEMCONVERT | WS_BORDER | WS_TABSTOP
+    AUTORADIOBUTTON "Radio", IDC_RADIO, 49, 64, 39, 10
+    AUTOCHECKBOX    "Check", IDC_CHECK, 7, 65, 40, 10
+    EDITTEXT        IDC_EDIT, 6, 6, 139, 48, ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK", IDOK, 149, 6, 40, 14
+    PUSHBUTTON      "Cancel", IDCANCEL, 149, 23, 40, 14
+END
+1000 MENU
+BEGIN
+    POPUP "&File"
+        BEGIN
+        MENUITEM "&New", 1010
+        MENUITEM "&Open", 1020
+        END
+END

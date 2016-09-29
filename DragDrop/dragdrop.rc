@@ -1,0 +1,18 @@
+/* Wedit generated resource file */
+#ifdef __LCC__
+#include <windows.h>
+#endif
+#include "dragdropres.h"
+
+
+IDD_MAINDIALOG DIALOG 7, 20, 195, 86
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "dragdrop"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "", IDC_STATIC, "STATIC", SS_ETCHEDHORZ, 6, 61, 183, 1
+    PUSHBUTTON      "&Remove selected from list", IDC_REMOVE, 58, 66, 92, 14
+    LISTBOX         IDC_LIST, 6, 6, 183, 53, LBS_SORT | LBS_MULTIPLESEL | WS_VSCROLL | WS_TABSTOP, WS_EX_ACCEPTFILES
+    DEFPUSHBUTTON   "&Copy file list", IDOK, 6, 66, 47, 14
+    PUSHBUTTON      "&Close", IDCANCEL, 155, 66, 34, 14
+END
